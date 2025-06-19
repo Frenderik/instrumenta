@@ -57,12 +57,12 @@ const Hero = () => {
       <div 
         className="hero-bg absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+          backgroundImage: `url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
         }}
       ></div>
       
       {/* Gradient Overlay for better contrast */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/70 via-cyan-800/60 to-cyan-600/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/80 via-cyan-800/70 to-cyan-600/85"></div>
       
       {/* Floating Animation Container */}
       <div className="floating-container absolute inset-0 pointer-events-none"></div>
