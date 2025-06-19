@@ -1,3 +1,4 @@
+
 const TargetUsers = () => {
   const users = [
     {
@@ -21,14 +22,14 @@ const TargetUsers = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section className="py-20 px-4 bg-cyan-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Who We <span className="text-cyan-600">Serve</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Who We <span className="text-cyan-300">Serve</span>
           </h2>
-          <div className="w-24 h-1 bg-cyan-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-cyan-300 mx-auto mb-8"></div>
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             Empowering diverse communities in the education sector to create truly inclusive learning environments
           </p>
         </div>

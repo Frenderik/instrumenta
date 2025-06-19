@@ -1,12 +1,13 @@
+
 const About = () => {
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section className="py-20 px-4 bg-cyan-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About Our <span className="text-cyan-600">Mission</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            About Our <span className="text-cyan-300">Mission</span>
           </h2>
-          <div className="w-24 h-1 bg-cyan-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-cyan-300 mx-auto mb-8"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
