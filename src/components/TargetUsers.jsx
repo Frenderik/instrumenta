@@ -22,14 +22,14 @@ const TargetUsers = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-blue-800">
+    <section className="py-20 px-4 bg-cyan-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Who We <span className="text-blue-300">Serve</span>
+            Who We <span className="text-cyan-300">Serve</span>
           </h2>
-          <div className="w-24 h-1 bg-blue-300 mx-auto mb-8"></div>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-cyan-300 mx-auto mb-8"></div>
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             Empowering diverse communities in the education sector to create truly inclusive learning environments
           </p>
         </div>
@@ -38,23 +38,23 @@ const TargetUsers = () => {
           {users.map((user, index) => (
             <div 
               key={index}
-              className="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
+              className="text-center p-8 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-xl"
             >
-              <div className="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="bg-cyan-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <i className={`${user.icon} text-white text-2xl`}></i>
               </div>
               
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{user.title}</h3>
               <p className="text-gray-700 leading-relaxed mb-4">{user.description}</p>
               
-              <div className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+              <div className="bg-cyan-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
                 {user.stats}
               </div>
             </div>
           ))}
         </div>
         
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl p-12 text-white text-center shadow-2xl">
+        <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl p-12 text-white text-center shadow-2xl">
           <i className="fas fa-users text-5xl mb-6"></i>
           <h3 className="text-3xl font-bold mb-4">Building an Inclusive Community</h3>
           <p className="text-xl leading-relaxed max-w-4xl mx-auto mb-8">
@@ -65,15 +65,15 @@ const TargetUsers = () => {
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">100+</div>
-              <div className="text-blue-100">Schools Interested</div>
+              <div className="text-cyan-100">Schools Interested</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">500+</div>
-              <div className="text-blue-100">Potential Learners</div>
+              <div className="text-cyan-100">Potential Learners</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">50+</div>
-              <div className="text-blue-100">Educators Engaged</div>
+              <div className="text-cyan-100">Educators Engaged</div>
             </div>
           </div>
         </div>

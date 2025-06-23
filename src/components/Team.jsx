@@ -44,14 +44,14 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-blue-800">
+    <section className="py-20 px-4 bg-cyan-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Meet Our <span className="text-blue-300">Team</span>
+            Meet Our <span className="text-cyan-300">Team</span>
           </h2>
-          <div className="w-24 h-1 bg-blue-300 mx-auto mb-8"></div>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-cyan-300 mx-auto mb-8"></div>
+          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
             A diverse group of passionate professionals united by our mission to make education accessible for everyone
           </p>
         </div>
@@ -62,12 +62,12 @@ const Team = () => {
               key={index}
               className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl group"
             >
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 text-center">
+              <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-8 text-center">
                 <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:animate-pulse">
-                  <i className={`${member.avatar} text-blue-600 text-2xl`}></i>
+                  <i className={`${member.avatar} text-cyan-600 text-2xl`}></i>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-                <p className="text-blue-100 font-semibold">{member.role}</p>
+                <p className="text-cyan-100 font-semibold">{member.role}</p>
               </div>
               
               <div className="p-6">
@@ -80,7 +80,7 @@ const Team = () => {
                     href={member.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300 transform hover:scale-110"
+                    className="bg-cyan-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-cyan-700 transition-colors duration-300 transform hover:scale-110"
                   >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
@@ -99,14 +99,14 @@ const Team = () => {
         </div>
         
         <div className="text-center">
-          <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-cyan-600 text-white p-8 rounded-2xl shadow-lg">
             <i className="fas fa-handshake text-4xl mb-4"></i>
             <h3 className="text-2xl font-bold mb-4">Join Our Mission</h3>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-6">
               We're always looking for passionate individuals who share our vision of inclusive education. 
               Whether you're a developer, educator, or advocate, there's a place for you in our community.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
+            <button className="bg-white text-cyan-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
               <i className="fas fa-envelope mr-2"></i>
               Get in Touch
             </button>
