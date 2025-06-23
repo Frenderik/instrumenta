@@ -5,13 +5,13 @@ const Features = () => {
       icon: "fas fa-hand-paper",
       title: "Sign-to-Text",
       description: "Advanced recognition technology that converts sign language gestures into readable text in real-time.",
-      color: "from-cyan-500 to-blue-500"
+      color: "from-blue-500 to-blue-600"
     },
     {
       icon: "fas fa-volume-up",
       title: "Sign-to-Speech",
       description: "Seamlessly transform sign language into spoken words, enabling clear communication across different mediums.",
-      color: "from-blue-500 to-purple-500"
+      color: "from-blue-600 to-purple-500"
     },
     {
       icon: "fas fa-user-friends",
@@ -22,14 +22,14 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-cyan-800">
+    <section className="py-20 px-4 bg-blue-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Powerful <span className="text-cyan-300">Features</span>
+            Powerful <span className="text-blue-300">Features</span>
           </h2>
-          <div className="w-24 h-1 bg-cyan-300 mx-auto mb-8"></div>
-          <p className="text-xl text-cyan-100 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-blue-300 mx-auto mb-8"></div>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Cutting-edge technology designed to break down communication barriers and create an inclusive learning environment
           </p>
         </div>
@@ -51,7 +51,7 @@ const Features = () => {
                 </p>
                 
                 <div className="mt-6 text-center">
-                  <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition-colors duration-300">
+                  <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300">
                     Learn More <i className="fas fa-arrow-right ml-2"></i>
                   </button>
                 </div>
@@ -61,7 +61,7 @@ const Features = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <div className="bg-cyan-600 text-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-lg">
             <i className="fas fa-lightbulb text-4xl mb-4"></i>
             <h3 className="text-2xl font-bold mb-4">Innovation at Its Core</h3>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
