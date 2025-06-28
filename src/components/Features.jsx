@@ -7,13 +7,13 @@ const Features = () => {
       icon: "fas fa-hand-paper",
       title: "Sign-to-Text",
       description: "Advanced recognition technology that converts sign language gestures into readable text in real-time.",
-      color: "from-cyan-500 to-blue-500"
+      color: "from-cyan-500 to-cyan-600"
     },
     {
       icon: "fas fa-camera",
       title: "Sign-to-Speech",
       description: "Seamlessly transform sign language into spoken words, enabling clear communication across different mediums.",
-      color: "from-blue-500 to-purple-500"
+      color: "from-cyan-600 to-purple-500"
     },
     {
       icon: "fas fa-user-friends",

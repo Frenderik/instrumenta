@@ -74,7 +74,7 @@ const Team = () => {
               delay={index * 0.15}
               initialRotate={index % 2 === 0 ? -6 : 6}
             >
-              <div className="bg-gradient-to-br from-cyan-500 to-blue-600 p-8 text-center">
+              <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-8 text-center">
                 <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:animate-pulse">
                   <i className={`${member.avatar} text-cyan-600 text-2xl`}></i>
                 </div>
@@ -92,7 +92,7 @@ const Team = () => {
                     href={member.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors duration-300 transform hover:scale-110"
+                    className="bg-cyan-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-cyan-700 transition-colors duration-300 transform hover:scale-110"
                   >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
