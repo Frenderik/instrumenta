@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <motion.div
+          className="grid md:grid-cols-4 gap-8 mb-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
           <div className="md:col-span-2">
             <div className="flex items-center mb-6">
               <i className="fas fa-hands text-cyan-400 text-3xl mr-3"></i>
@@ -47,7 +55,7 @@ const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Feedback</a></li>
             </ul>
           </div>
-        </div>
+        </motion.div>
         
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -60,14 +68,20 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="mt-8 text-center">
+          <motion.div
+            className="mt-8 text-center"
+            initial={{ scale: 0.95, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, type: "spring" }}
+          >
             <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-6 rounded-xl">
               <i className="fas fa-heart text-red-400 text-2xl mb-2"></i>
               <p className="text-white font-semibold">
                 Built with passion for inclusive education and equal opportunities for all learners
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </footer>

@@ -1,3 +1,5 @@
+import AnimatedCard from "./ui/AnimatedCard";
+import { motion } from "framer-motion";
 
 const Features = () => {
   const features = [
@@ -8,7 +10,7 @@ const Features = () => {
       color: "from-cyan-500 to-blue-500"
     },
     {
-      icon: "fas fa-volume-up",
+      icon: "fas fa-camera",
       title: "Sign-to-Speech",
       description: "Seamlessly transform sign language into spoken words, enabling clear communication across different mediums.",
       color: "from-blue-500 to-purple-500"
@@ -36,9 +38,10 @@ const Features = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <AnimatedCard 
               key={index}
               className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-500 hover:shadow-2xl group"
+              delay={index * 0.2}
             >
               <div className={`bg-gradient-to-r ${feature.color} p-8 text-center`}>
                 <i className={`${feature.icon} text-white text-5xl mb-4 group-hover:animate-bounce`}></i>
@@ -56,11 +59,17 @@ const Features = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </AnimatedCard>
           ))}
         </div>
         
-        <div className="mt-16 text-center">
+        <motion.div
+          className="mt-16 text-center"
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
           <div className="bg-cyan-600 text-white p-8 rounded-2xl shadow-lg">
             <i className="fas fa-lightbulb text-4xl mb-4"></i>
             <h3 className="text-2xl font-bold mb-4">Innovation at Its Core</h3>
@@ -69,7 +78,7 @@ const Features = () => {
               ensuring accurate, fast, and reliable assistance for all users.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import AnimatedCard from "./ui/AnimatedCard";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <AnimatedCard className="space-y-6" direction="left">
             <div className="bg-cyan-50 p-8 rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300">
               <i className="fas fa-bullseye text-cyan-600 text-3xl mb-4"></i>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
@@ -21,9 +22,9 @@ const About = () => {
                 fully participate in their educational journey.
               </p>
             </div>
-          </div>
+          </AnimatedCard>
           
-          <div className="space-y-6">
+          <AnimatedCard className="space-y-6" delay={0.2} direction="right">
             <div className="bg-gradient-to-br from-cyan-500 to-cyan-600 p-8 rounded-2xl text-white shadow-lg transform hover:scale-105 transition-all duration-300">
               <i className="fas fa-graduation-cap text-white text-3xl mb-4"></i>
               <h3 className="text-2xl font-bold mb-4">SDG 4 Alignment</h3>
@@ -33,10 +34,10 @@ const About = () => {
                 opportunities for all, especially those with hearing disabilities.
               </p>
             </div>
-          </div>
+          </AnimatedCard>
         </div>
         
-        <div className="mt-16 text-center">
+        <AnimatedCard className="mt-16 text-center" delay={0.4} direction="up">
           <div className="bg-gray-50 p-8 rounded-2xl">
             <i className="fas fa-heart text-red-500 text-4xl mb-4"></i>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Impact & Vision</h3>
@@ -46,7 +47,7 @@ const About = () => {
               can communicate effectively in their learning environment.
             </p>
           </div>
-        </div>
+        </AnimatedCard>
       </div>
     </section>
   );

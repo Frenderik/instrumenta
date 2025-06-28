@@ -1,45 +1,55 @@
+import AnimatedCard from "./ui/AnimatedCard";
+import { motion } from "framer-motion";
 
 const Team = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "Project Lead & Full-Stack Developer",
+      name: "Dr. Lawrence Nderu",
+      role: "Project PI",
       bio: "Passionate about inclusive technology and leading our technical vision",
-      linkedin: "https://linkedin.com/in/alexjohnson",
-      github: "https://github.com/alexjohnson",
+      linkedin: "https://linkedin.com/in/lnderu",
+      github: "https://github.com/lnderu",
       avatar: "fas fa-user-tie"
     },
     {
-      name: "Sarah Chen",
-      role: "AI/ML Specialist",
+      name: "Francis Mung'ang'u",
+      role: "Team Lead & Full-Stack Developer",
       bio: "Expert in computer vision and sign language recognition algorithms",
-      linkedin: "https://linkedin.com/in/sarahchen",
-      github: "https://github.com/sarahchen",
+      linkedin: "https://linkedin.com/in/francismungangu",
+      github: "https://github.com/francismungangu",
       avatar: "fas fa-brain"
     },
     {
-      name: "David Rodriguez",
+      name: "Nevean Adhiambo",
       role: "UX/UI Designer",
       bio: "Creating intuitive and accessible user experiences for all learners",
-      linkedin: "https://linkedin.com/in/davidrodriguez",
-      github: "https://github.com/davidrodriguez",
+      linkedin: "https://linkedin.com/in/neveanadhiambo",
+      github: "https://github.com/neveanadhiambo",
       avatar: "fas fa-palette"
     },
     {
-      name: "Emily Williams",
-      role: "Education Consultant",
-      bio: "Special education expert ensuring our platform meets real classroom needs",
-      linkedin: "https://linkedin.com/in/emilywilliams",
-      github: "https://github.com/emilywilliams",
+      name: "John Njuki",
+      role: "Backend Developer",
+      bio: "Expert in backend development and database management",
+      linkedin: "https://linkedin.com/in/johnnjuki",
+      github: "https://github.com/johnnjuki",
       avatar: "fas fa-graduation-cap"
     },
     {
-      name: "Michael Brown",
-      role: "Mobile Developer",
-      bio: "Building cross-platform mobile solutions for on-the-go learning",
-      linkedin: "https://linkedin.com/in/michaelbrown",
-      github: "https://github.com/michaelbrown",
+      name: "Mary Muragu",
+      role: "Backend Developer",
+      bio: "Building robust backend systems and APIs for our platform",
+      linkedin: "https://linkedin.com/in/mmuragu",
+      github: "https://github.com/Mmuragu",
       avatar: "fas fa-mobile-alt"
+    },
+    {
+      name: "Baruch Marambi",
+      role: "Frontend Developer",
+      bio: "Building intuitive and responsive user interfaces for our platform",
+      linkedin: "https://linkedin.com/in/baruchmarambi",
+      github: "https://github.com/Marambii",
+      avatar: "fas fa-code"
     }
   ];
 
@@ -58,9 +68,11 @@ const Team = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {teamMembers.map((member, index) => (
-            <div 
+            <AnimatedCard 
               key={index}
               className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl group"
+              delay={index * 0.15}
+              initialRotate={index % 2 === 0 ? -6 : 6}
             >
               <div className="bg-gradient-to-br from-cyan-500 to-blue-600 p-8 text-center">
                 <div className="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:animate-pulse">
@@ -94,11 +106,17 @@ const Team = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </AnimatedCard>
           ))}
         </div>
         
-        <div className="text-center">
+        <motion.div
+          className="text-center"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
+        >
           <div className="bg-cyan-600 text-white p-8 rounded-2xl shadow-lg">
             <i className="fas fa-handshake text-4xl mb-4"></i>
             <h3 className="text-2xl font-bold mb-4">Join Our Mission</h3>
@@ -111,7 +129,7 @@ const Team = () => {
               Get in Touch
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
