@@ -7,39 +7,39 @@ const Team = () => {
       name: "Dr. Lawrence Nderu",
       role: "Project PI",
       bio: "Passionate about inclusive technology and leading our technical vision",
-      linkedin: "https://linkedin.com/in/lnderu",
-      github: "https://github.com/lnderu",
+      linkedin: "https://linkedin.com/in/dr-lawrence-nderu",
+      github: "https://github.com/magvtv/39_Lawrence",
       avatar: "fas fa-user-tie"
     },
     {
       name: "Francis Mung'ang'u",
       role: "Team Lead & Full-Stack Developer",
       bio: "Expert in computer vision and sign language recognition algorithms",
-      linkedin: "https://linkedin.com/in/francismungangu",
-      github: "https://github.com/francismungangu",
+      linkedin: "https://linkedin.com/in/francis-mung-ang-u-27b1272a6",
+      github: "https://github.com/FRANCISMUNGANGU",
       avatar: "fas fa-brain"
     },
     {
       name: "Nevean Adhiambo",
       role: "UX/UI Designer",
       bio: "Creating intuitive and accessible user experiences for all learners",
-      linkedin: "https://linkedin.com/in/neveanadhiambo",
-      github: "https://github.com/neveanadhiambo",
+      linkedin: "https://linkedin.com/in/nevean-adhiambo-37131b288",
+      github: "https://github.com/neveanadhis",
       avatar: "fas fa-palette"
     },
     {
       name: "John Njuki",
       role: "Backend Developer",
       bio: "Expert in backend development and database management",
-      linkedin: "https://linkedin.com/in/johnnjuki",
-      github: "https://github.com/johnnjuki",
+      linkedin: "https://linkedin.com/in/jay-njuqy-26b6b0295",
+      github: "https://github.com/bitflaw",
       avatar: "fas fa-graduation-cap"
     },
     {
       name: "Mary Muragu",
       role: "Backend Developer",
       bio: "Building robust backend systems and APIs for our platform",
-      linkedin: "https://linkedin.com/in/mmuragu",
+      linkedin: "https://linkedin.com/in/mary-muragu-016482309",
       github: "https://github.com/Mmuragu",
       avatar: "fas fa-mobile-alt"
     },
@@ -47,7 +47,7 @@ const Team = () => {
       name: "Baruch Marambi",
       role: "Frontend Developer",
       bio: "Building intuitive and responsive user interfaces for our platform",
-      linkedin: "https://linkedin.com/in/baruchmarambi",
+      linkedin: "https://linkedin.com/in/baruch-marambi",
       github: "https://github.com/Marambii",
       avatar: "fas fa-code"
     }
