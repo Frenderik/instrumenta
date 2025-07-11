@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-
-  # schedule:
-  #   - cron: '0 0 0 * *' # Uncomment to schedule the workflow
-
   pull_request:
     branches:
       - main
@@ -36,7 +32,10 @@ jobs:
         with:
           context: ./
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name.toLowerCase() }}:${{ github.sha }}${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name.toLowerCase() }}:latest
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
@@ -45,5 +44,4 @@ jobs:
           ssh-keyscan ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Deploy to production server
-        run:
-          ssh ${{ secrets.SERVER_BOT }}@${{ secrets.SERVER_IP }} "~/deploy.sh"
+        run: ssh ${{ secrets.SERVER_BOT }}@${{ secrets.SERVER_IP }} "~/deploy.sh"
